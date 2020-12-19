@@ -1,0 +1,995 @@
+/*
+ *
+ * CSS com estilos específicos do tema verde
+ *
+ * @Autores
+ *
+ * - Simples Consultoria - www.simplesconsultoria.com.br
+ * - DESERTO Digital - www.desertodigital.com.br
+ *
+ * @Referencias
+ *
+ * Lista de padrões, convenções e boas praticas CSS que devem ser seguidas.
+ * https: //github.com/necolas/idiomatic-css/tree/master/translations/pt-BR
+ *
+ * Plugins para ordenar os atributos de CSS.
+ * http://csscomb.com/
+ *
+ * Validador de CSS do W3C.
+ * http://jigsaw.w3.org/css-validator/
+ */
+
+
+/* ==========================================================================
+   Cabeçalho do portal
+   ========================================================================== */
+
+#header {
+    padding: 32px 0 0 0;
+    background-color: #19882c;
+    /* Old browsers */
+    background-color: #0A5517;
+    background-image: -moz-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    /* FF3.6+ */
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#19882c), color-stop(100%, #025310));
+    /* Chrome,Safari4+ */
+    background-image: -webkit-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -o-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    /* Opera 12+ */
+    background-image: -ms-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    /* IE10+ */
+    background-image: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+    color: #fff;
+    /* IE6-9 fallback on horizontal gradient */
+    filter:progid: DXImageTransform.Microsoft.gradient( startColorstr="#19882c", endColorstr="#025310",GradientType=1);
+}
+
+/* Menu da Barra
+   ========================================================================== */
+
+div#wrapper-barra-brasil {
+    clear: both;
+    top: -18px;
+}
+
+/* Menu de Acessibilidade
+   ========================================================================== */
+
+#accessibility-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    font-size: 1.2em;
+    top: 47px;
+}
+
+#accessibility a {
+    color: #fff;
+}
+
+#accessibility span {
+    background: url("../img/bg-acess-key.gif") center center no-repeat;
+    color: #006600;
+}
+
+.anchor {
+    display: block;
+    font-size: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Titulo do portal
+   ========================================================================== */
+
+#portal-logo,
+#portal-title { color: #fff !important; }
+#portal-title-1 { top: 12px; }
+
+/* Menu site actions - Acessibilidade, Alto Contraste, Mapa do site
+   ========================================================================== */
+
+#portal-siteactions,
+#portal-language { border-bottom: 1px dotted #9bc2a3; }
+
+#portal-siteactions a,
+#portal-siteactions a:hover,
+#portal-language a,
+#portal-language a:hover { color: #fff !important; }
+
+/* Menu sobre o portal
+   ========================================================================== */
+
+#sobre { background: #00420c; }
+
+#sobre a { color: #fff; }
+
+#sobre .portalservicos-item a { border-right: 1px solid #6c9072; }
+
+/* Formulário de busca
+   ========================================================================== */
+
+#portal-searchbox { border: 1px solid #CCCCCC; }
+
+
+/* ==========================================================================
+   Sprinte Icons
+   ========================================================================== */
+
+/* icones de redes sociais */
+#social-icons a,
+/* central de conteudo */
+.item-central .link-videos,
+.item-central .link-audios,
+.item-central .link-infograficos,
+.item-central .link-publicacoes,
+.item-central .link-fotos,
+.item-central .link-aplicativos,
+.item-central .link-dadosabertos,
+/* icone do botão de busca */
+#header input.searchButton { background-image: url("../img/sprite.png"); }
+/* icone do botão de relatar erros */
+#content .relatar-erros a { background: url("../img/icon-reportar-erros.png") no-repeat; }
+
+/* Summary view */
+#content .summary-view-icon [class*="icon"] {
+    background-image: url("../img/summary-view-icons-sprite.png");
+}
+
+
+/* ==========================================================================
+   Portles
+   ========================================================================== */
+
+/* Portlet de navegação
+   ========================================================================== */
+
+/* ==========================================================================
+   Customização por Bruno Castro
+   ========================================================================== */
+/* Cabeçalho do Portlet de navegação geral
+   ========================================================================== */
+
+.portletNavigationTree .portletHeader {
+  background: #edeff1 url("imagens/seta-portlet.gif") no-repeat;
+  border-top: 4px solid #00510f;
+  background-size: 25px;
+  color: #00510f;
+  background-position: 100% 13%;
+  /* posição horizontal: quanto > mais à direita. Vertical < mais acima */
+}
+
+/* ===========================================================================
+   Fim Customização por Bruno Castro
+   ========================================================================== */
+
+#portal-column-one > .nav-menu-de-relevancia .first-item-nav a,
+#portal-column-one > .nav-menu-de-relevancia .first-item-nav a span {
+    color: #2c67cd !important;
+}
+
+/* Cabeçalho do Portlet Centrais de Conteudos
+   ========================================================================== */
+.portlet-static-contents-central .portletHeader,
+.portlet-static-resource-center .portletHeader,
+.portlet-static-centrales-del-contenido .portletHeader,
+.portlet-static-centrais-de-conteudos .portletHeader,
+.portletNavigationTree .portletHeader {
+    border-top: 4px solid #00510f;
+    color: #00510f;
+}
+
+.portletNavigationTree .portletHeader a { color: #00510f !important; }
+
+.navTreeLevel0 > li.navTreeItemInPath,
+.navTreeLevel0 > li.navTreeCurrentNode {
+    border-top: 2px solid #64946e !important;
+    border-bottom: 2px solid #64946e !important;
+}
+
+
+/* ==========================================================================
+   Collective Cover
+   ========================================================================== */
+
+/* Tile Banner Rotativo
+   ========================================================================== */
+
+/* Cores dos botões */
+
+#tile_banner_rotativo li .button-nav,
+.orderTiles .button-nav {
+    border-right: 1px solid #446b5d;
+    background-color: #0e561f;
+}
+
+#tile_banner_rotativo .activeSlide .button-nav,
+#tile_banner_rotativo li .button-nav:hover,
+#tile_banner_rotativo li .button-nav:focus {
+    background-color: #ffb400;
+}
+
+/* ícone do botão */
+
+#content  #tile_banner_rotativo li .button-nav,
+.orderTiles .button-nav {
+    background-image: url("../img/bullet-banner-rotativo.gif");
+}
+
+/* Tiles
+   ==========================================================================
+   Customização por Bruno Castro
+   ========================================================================== */
+
+/* .tile a { color: #2c67cd !important; } */
+
+/* edição da cor de Link */
+#content .tile-content a {
+  color: #222 !important;
+}
+/*cor dos LINKS em TODOS os tiles*/
+#content .tile-content a:hover {
+  color: #5e5b5b !important;
+}
+
+/* Fim Customização por Bruno Castro
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+    background: #034811;
+    color: #fff;
+}
+
+#footer a { color: #fff; }
+
+#wrapper #footer .footer-logos { background: #00420c; }
+
+/* Doormat
+   ========================================================================== */
+
+#doormat-container { background: #034811; }
+
+#doormat-container dl { border-left: 1px dotted #7dc48a; }
+
+#doormat-container dt { color: #7dc48a; }
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Smartphone
+   ========================================================================== */
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+
+    .menuTrigger {
+        background: #065116 url("../img/bg-menu-mobile.png") top right no-repeat;
+    }
+
+    .portlet-static-contents-central .portletHeader,
+    .portlet-static-resource-center .portletHeader,
+    .portlet-static-centrales-del-contenido .portletHeader,
+    .portlet-static-centrais-de-conteudos .portletHeader,
+    .portletNavigationTree .portletHeader {
+        background: #edeff1 url("../img/portlet-header.gif") no-repeat 96% center;
+    }
+
+    .portletNavigationTree .portletHeader.ativo {
+        background: url("../img/portlet-header-expanded.gif") no-repeat 96% center;
+    }
+
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #header #portal-searchbox .searchButton {
+    background: url("../img/search-button-30px.png") no-repeat;
+  }
+}
+
+
+/* ==========================================================================
+   Comentários
+   ========================================================================== */
+
+#viewlet-below-content .discussion {
+  border-top: 4px solid #000000;
+  padding-top: 20px;
+  margin-top: 15px;
+}
+
+#viewlet-below-content .comment a {
+  color: #345179;
+}
+
+#viewlet-below-content .comment .documentByLine {
+  color: #345179;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.replyTreeLevel0 {
+    background: #eeeff1;
+    padding: 15px 0px 10px;
+    clear: both;
+}
+
+.replyTreeLevel1 {
+    border-left: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    clear: both;
+}
+
+.replyTreeLevel2 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 20px;
+    clear: both;
+}
+
+.replyTreeLevel3 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 40px;
+    clear: both;
+}
+
+.replyTreeLevel4 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 60px;
+    clear: both;
+}
+
+.replyTreeLevel5 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 80px;
+    clear: both;
+}
+
+.replyTreeLevel6 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 100px;
+    clear: both;
+}
+
+.replyTreeLevel7 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 120px;
+    clear: both;
+}
+
+.replyTreeLevel8 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 140px;
+    clear: both;
+}
+
+.replyTreeLevel9 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 160px;
+    clear: both;
+}
+
+.replyTreeLevel10 {
+    border-left: 1px solid #eeeff1;
+    border-top: 1px solid #eeeff1;
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-left: 180px;
+    clear: both;
+}
+
+#viewlet-below-content .comment .documentByLine .commentDate {
+  font-size: 1.0em;
+  color: #172a38;
+  font-weight: normal;
+  padding-top: 0;
+}
+
+.commentBody {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    overflow: visible;
+}
+
+button.context.reply-to-comment-button {
+    margin-left: 20px;
+}
+
+.commentActions {
+    float: left;
+    margin-left: 10px;
+}
+
+.commentBody p {
+    font-size: 1.2em;
+    color: #172a38;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 10px;
+    float: none;
+}
+
+.row #commenting textarea,
+.row .discussion textarea {
+    font: 1.2em "open_sansregular", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: 1px solid #eeeff1;
+}
+
+#commenting p {
+    font-size: 1.2em;
+}
+
+.row #commenting label, .row .discussion label {
+    font-size: 1.1em;
+}
+
+.discussion .reply {
+    clear: both;
+    color: #000000;
+    padding-top: 5px;
+}
+
+/* ==========================================================================
+   Início customização por Bruno Castro
+   ========================================================================== */
+
+/* Colunas Acesso Rapido
+   ========================================================================== */
+
+.HeaderVerde {
+  margin-bottom: 0;
+  padding: 7px 0 1.2em;
+  border-top: 4px solid #1D571F !important;
+  border-bottom: 1px solid #ccc;
+  background: #eeeff1;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #1d571f;
+}
+
+.list-acesso .item-acesso {
+  padding: 10px 0 0 0;
+  font-weight: bold;
+  display: block;
+  vertical-align: middle;
+  list-style: none !important;
+}
+
+#content .item-acesso .link-acesso {
+  display: block;
+  padding-left: 48px;
+  /*espaçamento do texto junto do icone */
+  height: 50px;
+  /*altura do bloco (icones) */
+  background-size: 40px 40px !important;
+  line-height: 15px;
+  /*espaçamento entre as linhas do texto */
+  color: #404040;
+}
+
+#content .item-acesso a:hover {
+  text-decoration: underline;
+}
+
+.fundo-cinza {
+  background: #eeeff2!important;
+  margin-bottom: 0px!important;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  border-bottom: 1px solid #ccc;
+  padding: 7px 0 0 0;
+}
+
+#main .row .fundo-cinza {
+  width: 97.963% !important;
+  margin-left: 1.95% !important;
+}
+
+#content .tile .HeaderVerde {
+  /*clear:both;*/
+  margin-bottom: 0 !important;
+}
+
+/* Icones da Central de conteudo
+   ========================================================================== */
+
+.item-acesso .csf {
+  background: url("../img/acesso/csf.jpg") no-repeat;
+}
+
+.item-acesso .siape {
+  background: url("../img/acesso/siape.jpg") no-repeat;
+}
+
+.item-acesso .biblioteca {
+  background: url("../img/acesso/biblioteca.jpg") no-repeat;
+}
+
+.item-acesso .capes {
+  background: url("../img/acesso/capes.jpg") no-repeat;
+}
+
+.item-acesso .carta {
+  background: url("../img/acesso/carta.jpg") no-repeat;
+}
+
+.item-acesso .certifi {
+  background: url("../img/acesso/certifi.jpg") no-repeat;
+}
+
+.item-acesso .cnpq {
+  background: url("../img/acesso/cnpq.jpg") no-repeat;
+}
+
+.item-acesso .ebrary {
+  background: url("../img/acesso/ebrary.jpg") no-repeat;
+}
+
+.item-acesso .suap {
+  background: url("../img/acesso/suap.jpg") no-repeat;
+}
+
+.item-acesso .ebookcentral {
+  background: url("../img/acesso/ebookcentral.jpg") no-repeat;
+}
+
+.item-acesso .corregedoria {
+  background: url("../img/acesso/corregedoria.jpg") no-repeat;
+}
+
+
+.item-acesso .ouv {
+  background: url("../img/acesso/ouv.jpg") no-repeat;
+}
+
+.item-acesso .periodicos {
+  background: url("../img/acesso/periodicos.jpg") no-repeat;
+}
+
+.item-acesso .servidor {
+  background: url("../img/acesso/servidor.jpg") no-repeat;
+}
+
+.item-acesso .sei {
+  background: url("../img/acesso/SEI.jpg") no-repeat;
+}
+
+.item-acesso .transp {
+  background: url("../img/acesso/transp.jpg") no-repeat;
+}
+
+.item-acesso .meuifmg {
+  background: url("../img/acesso/meuifmg.jpg") no-repeat;
+}
+
+.item-acesso .isf {
+  background: url("../img/acesso/isf.jpg") no-repeat;
+}
+
+.item-acesso .pearson {
+  background: url("../img/acesso/pearson.jpg") no-repeat;
+}
+
+.item-acesso .scielo {
+  background: url("../img/acesso/scielo.jpg") no-repeat;
+}
+
+.item-acesso .licitacoes {
+  background: url("../img/acesso/licitacoes.jpg") no-repeat;
+}
+
+/* Paginas com navegação
+   ========================================================================== */
+
+/*define o tipo de lista*/
+.nav-paginas ul, .nav-paginas li {
+  list-style: none !important;
+  float: left;
+  display: inline-block;
+}
+
+/*define as cores dos links*/
+#content .selecionado {
+  background-color: #084312 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.nav-paginas>li>a:link, .nav-paginas>li>a:visited {
+  background-color: #ededed;
+  color: #084312 !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  outline: none;
+}
+
+#content .nav-paginas>li>a:hover {
+  background-color: #199325;
+  color: #fff !important;
+}
+
+.nav-paginas>li>a:active, .nav-paginas>li>a:focus {
+  background-color: #084312;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Botões de Tamanhos diferentes
+   ========================================================================== */
+
+.btpequeno {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 150%;
+  display: inline-block;
+  background-color: #ededed;
+  color: #084312 !important;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btpequeno:hover {
+  background-color: #199325;
+  color: #fff !important;
+}
+
+.btmedio {
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 200%;
+  display: inline-block;
+}
+
+.btgrande {
+  padding-right: 32px !important;
+  padding-left: 32px !important;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 2px;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 250%;
+}
+
+/* Tabela - Lista Telefonica
+   ========================================================================== */
+
+#lista-tabela {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#lista-tabela td, #lista-tabela th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#lista-tabela tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+#lista-tabela li:nth-child(even) {
+  background-color: #f2f2f2 !important;
+}
+
+#lista-tabela ul, #lista-tabela li {
+  list-style: none !important;
+}
+
+#lista-tabela tr:hover {
+  background-color: #ddd;
+}
+
+#lista-tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Tabela de Conteudo de Cursos
+   ========================================================================== */
+
+#tabela-conteudo {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabela-conteudo td, #tabela-cursos th {
+  border: none;
+  text-align: left;
+  padding: 8px;
+}
+
+#tabela-conteudo img {
+  margin: auto;
+  vertical-align: top;
+}
+
+#tabela-conteudo tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.divconteudoUnidade {
+  float: left;
+  position: relative;
+}
+
+/* Linhas separadoras nas coleções - TEMA VERDE ESCURO EDUCACAO
+   ========================================================================== */
+
+ .verde-escuro .cover-collection-tile .collection-item h2 {
+  border-top: 1px dotted #404040;
+  /*customização por Bruno Castro */
+  padding: 10px 0;
+  margin: auto;
+}
+
+.verde-escuro .cover-collection-tile .collection-item h4 {
+  border-bottom: 1px dotted #404040 !important;
+  /*customização por Bruno Castro */
+  padding: 10px 0;
+  margin: auto;
+}
+
+.verde-escuro .cover-collection-tile .collection-item h3 {
+  border-bottom: 1px dotted #404040 !important;
+  /*customização por Bruno Castro */
+  padding: 10px 0;
+  margin: auto;
+}
+
+.verde-escuro .cover-collection-tile .collection-item h1 {
+  border-bottom: 1px dotted #404040 !important;
+  /*customização por Bruno Castro */
+  padding: 10px 0;
+  margin: auto;
+}
+
+/* ======== Ocultar Nome Autor ======
+
+#content .documentAuthor {
+  display: none !important;
+} */
+
+/* Espaçamento Breadcrumbs
+   ========================================================================== */
+
+#main #portal-breadcrumbs {
+  /* espaçamento do breadcrumb nas páginas internas */
+  margin-top: 0.423em !important;
+  margin-bottom: 0.423em !important;
+}
+
+.section-home #main {
+  /* espaçamento do breadcrumb (oculto) na página inicial */
+  padding-top: 1.104em !important;
+}
+
+/* Espaçamento entre Coluna de Menu e Coluna de Conteúdo
+   ========================================================================== */
+
+#portal-column-one {
+  width: 16.625%;
+}
+
+/* Espaçamento entre os blocos de Menu
+   ========================================================================== */
+
+#portal-column-one .portletNavigationTree {
+  margin-bottom: 1.81em;
+}
+
+/* Espaçamento banner Rotativo
+   ========================================================================== */
+
+#tile_banner_rotativo {
+  height: 130px !important;
+}
+
+/* Espaçamento Acontece nos Campi
+   ========================================================================== */
+
+#content .cover-collection-tile .collection-item h4 {
+  padding: 0 0 10px !important;
+}
+
+#content .cover-collection-tile .collection-item h4 a {
+  color: #222 !important;
+}
+
+#content .cover-collection-tile .collection-item h4 a:hover {
+  color: #5e5b5b !important;
+}
+
+#content .cover-collection-tile .collection-item p {
+  margin-bottom: 0 !important;
+  padding: 10px 0 5px 0 !important;
+  font-weight: bold;
+}
+
+/* Correção alinhamento Noticias centrais
+   ========================================================================== */
+
+.tile img.right {
+  margin: 0 0.1em 0.5em 0.9em !important;
+}
+
+#content .tile .tile-description {
+  text-align: justify !important;
+  margin: 5px 0 5px 0 !important;
+}
+
+/* Remove limitação de tamanho para exibição dos botões
+   de compartilhamento de Redes Sociais
+   ========================================================================== */
+
+#viewlet-social-like {
+  width: auto !important;
+}
+
+/* Youtube Embedded Responsivo
+   ========================================================================== */
+
+.youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Lista Horizontal IFMG
+   ========================================================================== */
+/* Lista horizontal
+   ========================================================================== */
+
+.lista-horizontal-ifmg {
+    /*border: 1px solid #c0c1c3;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   /* background: none !important; */
+}
+
+.lista-horizontal-ifmg .tile-header,
+.lista-horizontal-ifmg .tile-title {
+    margin: 0;
+    padding: 0.5em 1em;
+   /* border-bottom: 1px solid #c0c1c3;*/
+    color: #464a53;
+    text-transform: uppercase;
+}
+
+.lista-horizontal-ifmg .tile-footer {
+    float: left;
+    margin: 0;
+    padding: 1% 2.5%;
+    width: 95%;
+    /*border-top: 1px solid #c0c1c3;*/
+    color: #464a53;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/*.lista-horizontal-ifmg .list-item a,
+.lista-horizontal-ifmg .collection-item a { color: #365073 !important; }*/
+
+.lista-horizontal-ifmg .list-item,
+.lista-horizontal-ifmg .collection-item {
+    float: left;
+    padding: 2% 1% 2% 3%;
+    width: 29%;
+    border: none !important;
+}
+.lista-horizontal-ifmg  h2 {
+    border: none !important;
+}
+
+/* Correção Banner Chamada de Foto
+   ===========================================================================*/
+#tile_banner_rotativo li .banner img {
+    max-height: 450px;
+}
+
+/* Corrige cor do texto nas notícias da capa
+   ========================================================================== */
+   .tile.verde-escuro h1,
+   .tile.verde-escuro p { color: #000 !important; }
+
+/* ==========================================================================
+   Fim Customização por Bruno Castro
+   ========================================================================== */
+
+/* ==========================================================================
+   Customização por Renato Godoy para Pronatec
+   ========================================================================== */
+
+#sistemas a:hover {
+  color: #000 !important;
+}
+
+/* ==========================================================================
+   Fim Customização por Renato Godoy
+   ========================================================================== */
